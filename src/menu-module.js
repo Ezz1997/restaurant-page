@@ -68,7 +68,6 @@ const data = [
 function initMenu() {
     const content = document.getElementById("content");
     content.textContent = "";
-    const h1 = document.createElement("h1");
     const menu = document.createElement("div");
     menu.style = "display: grid; gap: 16px; justify-content: center";
 
@@ -89,10 +88,6 @@ function initMenu() {
         menu.appendChild(menuItem);
     }
 
-
-    h1.textContent = "Menu";
-
-    content.appendChild(h1);
     content.appendChild(menu);
 }
 

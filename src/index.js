@@ -3,8 +3,6 @@ import { initHomepage } from "./homepage-module.js";
 import { initMenu } from "./menu-module.js";
 import { initAbout } from "./about-module.js";
 
-console.log("Hello Webpack Bundler");
-
 initHomepage();
 
 function initNavButtons() {
