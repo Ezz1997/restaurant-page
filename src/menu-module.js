@@ -68,6 +68,8 @@ const data = [
 function initMenu() {
     const content = document.getElementById("content");
     content.textContent = "";
+    content.classList = "";
+    
     const menu = document.createElement("div");
     menu.style = "display: grid; gap: 16px; justify-content: center";
 

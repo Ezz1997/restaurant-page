@@ -1,3 +1,29 @@
+/*
+Source - https://stackoverflow.com/a/44645580
+Posted by Mr.Pandya
+Retrieved 2026-06-06, License - CC BY-SA 3.0
+*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    height: 100vh;
+    padding: 36px;
+    background: linear-gradient(180deg,
+            #f8f4ed 0%,
+            #cdb79e 100%);
+}
+
 .img-style {
     height: 350px;
     width: 350px;
@@ -28,4 +54,28 @@ nav {
     display: flex;
     justify-content: center;
     gap: 32px;
+}
+
+.homepage-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    background-color: antiquewhite;
+    padding: 32px;
+    width: fit-content;
+    gap: 32px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.homepage-content:hover{
+    background-color: #cdb79e;
+    transform: translateY(-8px);
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
