@@ -44,6 +44,7 @@ body {
     background: transparent;
     cursor: pointer;
     font-size: larger;
+    color: #99754b;
 }
 
 .nav-btn:hover {
