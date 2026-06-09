@@ -19,24 +19,16 @@ body {
     grid-template-rows: 70px 1fr;
     height: 100vh;
     padding: 36px;
-    background: linear-gradient(180deg,
+    background: linear-gradient(to bottom,
             #f8f4ed 0%,
             #cdb79e 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .img-style {
     height: 350px;
     width: 350px;
-}
-
-.menu-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    height: 350px;
-    width: 500px;
-    background-color: aliceblue;
 }
 
 .nav-btn {
@@ -70,13 +62,45 @@ nav {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.homepage-content:hover{
+.homepage-content:hover {
     background-color: #cdb79e;
     transform: translateY(-8px);
 }
 
+.menu-item {
+    display: grid;
+    grid-template-rows: 1fr 70px 30px;
+    background-color: antiquewhite;
+    padding: 16px;
+    width: 450px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.menu-item:hover {
+    background-color: #cdb79e;
+    transform: translateY(-4px);
+}
+
 .tangerine-regular {
-  font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-item-btn {
+    height: 32px;
+    width: 90px;
+    border: none;
+    border-radius: 16px;
+    align-self: center;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.menu-item:hover .menu-item-btn{
+    background-color: darkgoldenrod;
 }
